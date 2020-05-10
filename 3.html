@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>look  for the changes of the string</title>
+</head>
+<body>
+   <center>
+        <h3>You must inspect this page and console it to see the output</h3> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <button><a href="4.html">Move to the next page</a></button>
+    </center>
+    <script>
+        var str = 'The Quick Brown Fox';
+var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+var result = [];
+  
+  for(var x=0; x<str.length; x++)
+  {
+    if(UPPER.indexOf(str[x]) !== -1)
+    {
+      result.push(str[x].toLowerCase());
+    }
+    else if(LOWER.indexOf(str[x]) !== -1)
+    {
+      result.push(str[x].toUpperCase());
+    }
+    else 
+    {
+      result.push(str[x]);
+    }
+  }
+console.log (result.join(''));
+
+    </script>
+</body>
+</html>

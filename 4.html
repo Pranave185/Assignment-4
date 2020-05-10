@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> javascript to find Sum of squares of elements of an array</title>
+</head>
+<body>
+    <center>
+        <h3>please inspect this page and console it to see the output</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button><a href="5.html">Move to next page</a></button>
+    </center>
+    <script>
+        function sum_sq(array) {
+  var sum = 0, 
+      i = array.length;
+  while (i--) 
+   sum += Math.pow(array[i], 2);
+  return sum;
+}
+ 
+console.log(sum_sq([5,7,8,3,4])); 
+
+    </script>
+</body>
+</html>
